@@ -31,13 +31,13 @@ jobs:
       - save_cache:
           paths:
             - node_modules
-          key: v1-ependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
       # - run: yarn test
 
-    deployment:
-      staging:
-        branch: master
-        heroku:
-          appname: docker-node-test
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: docker-node-test
