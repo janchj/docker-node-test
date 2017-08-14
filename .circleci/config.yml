@@ -37,7 +37,7 @@ jobs:
       # - run: yarn test
 
       - deployment:
-        staging:
-          branch: master
-          heroku:
-            appname: docker-node-test
+          staging:
+            branch: master
+            heroku:
+              appname: docker-node-test
